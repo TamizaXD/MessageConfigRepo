@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TS-{##}",
+ "creation": "2024-08-19 08:54:15.895000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "account_sid",
+  "auth_token",
+  "column_break_kusd",
+  "from_phone_number"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_sid",
+   "fieldtype": "Data",
+   "label": "Account SID"
+  },
+  {
+   "fieldname": "auth_token",
+   "fieldtype": "Data",
+   "label": "Auth Token"
+  },
+  {
+   "fieldname": "column_break_kusd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_phone_number",
+   "fieldtype": "Data",
+   "label": "From Phone Number",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-19 10:50:43.500360",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "Twilio Setting",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

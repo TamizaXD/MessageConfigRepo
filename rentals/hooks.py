@@ -133,23 +133,33 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"rentals.tasks.all"
-# 	],
-# 	"daily": [
-# 		"rentals.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"rentals.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"rentals.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"rentals.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"rentals.tasks.all"
+	# ],
+	# "daily": [
+	# 	"rentals.tasks.daily"
+	# ],
+	# "hourly": [
+	# 	"rentals.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"rentals.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"rentals.tasks.monthly"
+	# ],
+    # "every_minute": [
+    #     "rentals.methods.test_schedulers.test"
+    # ],
+    
+    # "Cron": {
+    #     "30 15 * * 3":[
+    #         "rentals.api.send_payment_reminders"
+    #     ]
+    # }
+    
+}
 
 # Testing
 # -------
