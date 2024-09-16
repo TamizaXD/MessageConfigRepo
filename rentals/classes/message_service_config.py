@@ -35,7 +35,7 @@ class WhatsappServiceConfig(MessageService):
             "isNewsletter": self.isNewsletter,
             "message": message_body
         }
-        if self.base64:
+        if self.base64: #if the whatsapp message has an image both the url and data are updated
             url = f"{self.baseUrl}/send-image"
             data.update({"base64": self.base64})
 
@@ -47,7 +47,6 @@ class SmsServiceConfig(MessageService):
     def __init__(self, name, orgName, userName, password, code):
 
         self.name = name
-        # self.message_service_doc = get_customer(self.name)
         self.orgName = orgName
         self.userName = userName
         self.password = password
